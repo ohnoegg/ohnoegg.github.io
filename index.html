@@ -1,1 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="김건호의 프로필과 프로젝트 포트폴리오" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>김건호 | 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.769-.244.769-.542 0-.267-.01-.975-.016-1.914-3.13.68-3.791-1.508-3.791-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.078-.686.078-.686 1.132.08 1.728 1.162 1.728 1.162 1.006 1.724 2.64 1.226 3.282.937.102-.728.394-1.226.716-1.508-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.234 1.16-3.021-.116-.285-.503-1.43.11-2.98 0 0 .945-.303 3.095 1.154A10.8 10.8 0 0 1 12 6.177c.955.004 1.917.129 2.817.38 2.148-1.457 3.091-1.154 3.091-1.154.616 1.55.229 2.695.113 2.98.722.787 1.158 1.791 1.158 3.021 0 4.326-2.63 5.278-5.135 5.557.404.35.765 1.041.765 2.098 0 1.516-.014 2.74-.014 3.112 0 .3.203.651.774.541A11.252 11.252 0 0 0 12 .75Z" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m4 7 8 6 8-6" />
+      </symbol>
+    </svg>
 
+    <main class="container">
+      <!-- 프로필 수정: 이름, 이메일, GitHub 주소를 입력하세요. -->
+      <section class="profile" aria-labelledby="profile-name">
+        <img class="profile-photo" src="profile.jpg" width="354" height="472" alt="김건호 프로필 사진" fetchpriority="high" />
+        <div class="profile-info">
+          <h1 id="profile-name">김건호</h1>
+          <dl class="profile-details">
+            <div>
+              <dt><svg class="icon" aria-hidden="true"><use href="#icon-mail" /></svg>이메일</dt>
+              <!-- 이메일 수정: 아래 내용을 <a href="mailto:실제주소">실제주소</a>로 교체하세요. -->
+              <dd class="pending">추후 입력</dd>
+            </div>
+            <div>
+              <dt><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub</dt>
+              <!-- GitHub 수정: href와 표시 주소를 함께 변경하세요. -->
+              <dd><a href="https://github.com/ohnoegg" target="_blank" rel="noopener noreferrer">github.com/ohnoegg<span class="sr-only"> (새 탭)</span></a></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 소개 수정: 아래 예시 문구를 본인의 소개로 변경하세요. -->
+      <section class="resume-section" aria-labelledby="intro-title">
+        <h2 id="intro-title">소개</h2>
+        <p class="section-content">웹 서비스를 만들며 배운 내용과 작업한 프로젝트를 정리하고 있습니다.<br />각 프로젝트의 구현 과정과 사용한 기술을 소개합니다.</p>
+      </section>
+
+      <!-- 기술 수정: 아래는 예시입니다. 실제 사용하는 기술로 변경한 뒤 '예시' 표시를 삭제하세요. -->
+      <section class="resume-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">기술 <span class="sample-label">예시</span></h2>
+        <dl class="skill-list">
+          <div>
+            <dt>Frontend</dt>
+            <dd><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li></ul></dd>
+          </div>
+          <div>
+            <dt>Backend</dt>
+            <dd><ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul></dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd><ul class="tags"><li>Git</li><li>GitHub</li><li>Figma</li></ul></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="resume-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">프로젝트 <span class="sample-label">예시</span></h2>
+        <!--
+          프로젝트 수정: 각 article의 href, 제목, 기간, 설명, 기술을 변경하세요.
+          article을 복사하거나 삭제해서 개수를 조절할 수 있습니다.
+          실제 프로젝트로 교체한 뒤 '예시' 표시와 링크 안내도 수정하세요.
+        -->
+        <div class="project-list">
+          <article class="project">
+            <div class="project-heading">
+              <h3><a href="https://example.com/?project=planit" target="_blank" rel="noopener noreferrer">Planit<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
+              <p class="project-period"><time datetime="2026-03">2026.03</time> – <time datetime="2026-06">2026.06</time></p>
+            </div>
+            <p>팀 프로젝트와 일정을 관리하는 서비스</p>
+            <ul class="tags" aria-label="사용 기술"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-heading">
+              <h3><a href="https://example.com/?project=ordinary" target="_blank" rel="noopener noreferrer">Ordinary<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
+              <p class="project-period"><time datetime="2026-01">2026.01</time> – <time datetime="2026-02">2026.02</time></p>
+            </div>
+            <p>글을 작성하고 공유하는 개인 블로그</p>
+            <ul class="tags" aria-label="사용 기술"><li>Next.js</li><li>TypeScript</li><li>Markdown</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-heading">
+              <h3><a href="https://example.com/?project=form-and-field" target="_blank" rel="noopener noreferrer">Form &amp; Field<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
+              <p class="project-period"><time datetime="2025-10">2025.10</time> – <time datetime="2025-12">2025.12</time></p>
+            </div>
+            <p>생활용품을 판매하는 온라인 스토어</p>
+            <ul class="tags" aria-label="사용 기술"><li>React</li><li>TypeScript</li><li>Node.js</li></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
