@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="김건호의 프로필과 프로젝트 포트폴리오" />
+    <meta name="description" content="현실의 문제를 기술로 해결하는 개발자 김건호입니다. 모두닥터, Commerce Vision Search Engine, 꽃동네의 구현 과정과 기술 스택을 소개합니다." />
     <meta name="theme-color" content="#ffffff" />
-    <title>김건호 | 포트폴리오</title>
+    <title>김건호 | Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="project-links.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
     <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <symbol id="icon-github" viewBox="0 0 24 24">
         <path fill="currentColor" d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.769-.244.769-.542 0-.267-.01-.975-.016-1.914-3.13.68-3.791-1.508-3.791-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.078-.686.078-.686 1.132.08 1.728 1.162 1.728 1.162 1.006 1.724 2.64 1.226 3.282.937.102-.728.394-1.226.716-1.508-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.234 1.16-3.021-.116-.285-.503-1.43.11-2.98 0 0 .945-.303 3.095 1.154A10.8 10.8 0 0 1 12 6.177c.955.004 1.917.129 2.817.38 2.148-1.457 3.091-1.154 3.091-1.154.616 1.55.229 2.695.113 2.98.722.787 1.158 1.791 1.158 3.021 0 4.326-2.63 5.278-5.135 5.557.404.35.765 1.041.765 2.098 0 1.516-.014 2.74-.014 3.112 0 .3.203.651.774.541A11.252 11.252 0 0 0 12 .75Z" />
@@ -22,86 +24,265 @@
       </symbol>
     </svg>
 
-    <main class="container">
-      <!-- 프로필 수정: 이름, 이메일, GitHub 주소를 입력하세요. -->
+
+    <header class="site-header container">
+      <a class="wordmark" href="#main">김건호<span> / Portfolio</span></a>
+      <nav aria-label="주요 섹션">
+        <a href="#projects">프로젝트</a>
+        <a href="#experience">경험</a>
+        <a href="#skills">기술</a>
+      </nav>
+    </header>
+    <main class="container" id="main">
       <section class="profile" aria-labelledby="profile-name">
         <img class="profile-photo" src="profile.jpg" width="354" height="472" alt="김건호 프로필 사진" fetchpriority="high" />
         <div class="profile-info">
+          <p class="eyebrow">DEVELOPER · PROBLEM SOLVER</p>
           <h1 id="profile-name">김건호</h1>
+          <p class="profile-tagline">기술로 현실의 문제를 해결합니다.</p>
           <dl class="profile-details">
             <div>
               <dt><svg class="icon" aria-hidden="true"><use href="#icon-mail" /></svg>이메일</dt>
-              <!-- 이메일 수정: 아래 내용을 <a href="mailto:실제주소">실제주소</a>로 교체하세요. -->
-              <dd class="pending">추후 입력</dd>
+              <dd><a href="mailto:ohnoegg.k@gmail.com">ohnoegg.k@gmail.com</a></dd>
             </div>
             <div>
               <dt><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub</dt>
-              <!-- GitHub 수정: href와 표시 주소를 함께 변경하세요. -->
-              <dd><a href="https://github.com/ohnoegg" target="_blank" rel="noopener noreferrer">github.com/ohnoegg<span class="sr-only"> (새 탭)</span></a></dd>
+              <dd><a href="https://github.com/ohnoegg" target="_blank" rel="noopener noreferrer">github.com/ohnoegg<svg class="icon inline-icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (새 탭)</span></a></dd>
             </div>
           </dl>
         </div>
       </section>
 
-      <!-- 소개 수정: 아래 예시 문구를 본인의 소개로 변경하세요. -->
       <section class="resume-section" aria-labelledby="intro-title">
-        <h2 id="intro-title">소개</h2>
-        <p class="section-content">웹 서비스를 만들며 배운 내용과 작업한 프로젝트를 정리하고 있습니다.<br />각 프로젝트의 구현 과정과 사용한 기술을 소개합니다.</p>
+        <div class="section-label"><p class="eyebrow">ABOUT</p><h2 id="intro-title">소개</h2></div>
+        <div class="section-content intro-content">
+          <p class="intro-lead">불명확한 문제를, 실행 가능한 과제로.</p>
+          <p>문제의 본질을 파악하고 실행 가능한 작은 단위로 나눈 뒤, 필요한 지식과 기술을 익혀 하나씩 해결합니다. 스타트업 공동 창업자로 제품 기획부터 개발·운영까지 경험하며, 비즈니스 가치를 우선하고 리소스를 효율적으로 사용하는 태도를 배웠습니다.</p>
+          <p>새로운 문제를 마주할 때마다 배우고 직접 부딪히며 끝내 해결합니다. 더 복잡한 문제를 더 빠르고 정확하게 해결하는 개발자로 성장하고 있습니다.</p>
+        </div>
       </section>
 
-      <!-- 기술 수정: 아래는 예시입니다. 실제 사용하는 기술로 변경한 뒤 '예시' 표시를 삭제하세요. -->
-      <section class="resume-section" aria-labelledby="skills-title">
-        <h2 id="skills-title">기술 <span class="sample-label">예시</span></h2>
-        <dl class="skill-list">
-          <div>
-            <dt>Frontend</dt>
-            <dd><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li></ul></dd>
-          </div>
-          <div>
-            <dt>Backend</dt>
-            <dd><ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul></dd>
-          </div>
-          <div>
-            <dt>Tools</dt>
-            <dd><ul class="tags"><li>Git</li><li>GitHub</li><li>Figma</li></ul></dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="resume-section" aria-labelledby="projects-title">
-        <h2 id="projects-title">프로젝트 <span class="sample-label">예시</span></h2>
-        <!--
-          프로젝트 수정: 각 article의 href, 제목, 기간, 설명, 기술을 변경하세요.
-          article을 복사하거나 삭제해서 개수를 조절할 수 있습니다.
-          실제 프로젝트로 교체한 뒤 '예시' 표시와 링크 안내도 수정하세요.
-        -->
+      <section class="resume-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-label"><p class="eyebrow">SELECTED WORK</p><h2 id="projects-title">프로젝트 <span class="section-count">03</span></h2><p class="section-caption">문제에서 출발해<br />구현으로 이어진 경험</p></div>
         <div class="project-list">
-          <article class="project">
-            <div class="project-heading">
-              <h3><a href="https://example.com/?project=planit" target="_blank" rel="noopener noreferrer">Planit<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
-              <p class="project-period"><time datetime="2026-03">2026.03</time> – <time datetime="2026-06">2026.06</time></p>
+          <article class="project" id="modudoctor" aria-labelledby="modudoctor-title">
+            <div class="project-meta"><span class="project-type"><span class="project-number">01</span>개인 프로젝트</span><p class="project-period"><time datetime="2026-09">2026.09</time> — <time datetime="2026-10">2026.10</time></p></div>
+            <h3 id="modudoctor-title">모두닥터</h3>
+            <p class="project-summary">자연어로 조건을 전달하면 필요한 병원 정보를 찾을 수 있는 병원 탐색 서비스</p>
+            <p class="project-role"><span>담당</span>기획 · Full-stack 개발 · 배포</p>
+            <div class="project-links" data-project-links="modudoctor" role="group" aria-label="모두닥터 관련 링크">
+              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
+              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
             </div>
-            <p>팀 프로젝트와 일정을 관리하는 서비스</p>
-            <ul class="tags" aria-label="사용 기술"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+            <div class="project-stack">
+              <h4>Tech stack</h4>
+              <ul class="tech-tags" aria-label="사용 기술">
+                <li><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span></li>
+                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
+                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
+                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
+                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
+              </ul>
+            </div>
+            <div class="project-body">
+              <div class="project-detail">
+                <h4>해결하려는 문제</h4>
+                <p>병원을 고를 때 위치, 진료과, 운영시간을 여러 곳에서 확인하고 직접 비교해야 하는 불편에 주목했습니다. 사용자가 원하는 조건을 자연어로 전달하면, 그 조건에 맞는 병원 정보를 탐색할 수 있도록 기획했습니다.</p>
+              </div>
+              <div class="project-detail">
+                <h4>구현 과정</h4>
+                <ul class="detail-list">
+                  <li><strong>검색에 필요한 데이터 확보.</strong> 공공의료데이터를 활용해 전국 병원 데이터를 확보하고, 병원 정보를 검색하는 backend service와 연결했습니다.</li>
+                  <li><strong>자연어 요청과 검색 기능 연결.</strong> LangChain 기반 에이전트가 사용자 요청의 조건을 해석하고, Tool Calling으로 backend의 API (Application Programming Interface)를 호출하는 흐름을 구성했습니다.</li>
+                  <li><strong>검색 결과를 활용한 응답.</strong> 조회한 병원 정보를 LLM (Large Language Model)의 context로 전달해, 검색 결과를 바탕으로 구조화된 답변을 제공하는 흐름을 설계했습니다.</li>
+                </ul>
+              </div>
+              <div class="project-outcome">
+                <h4>결과와 배운 점</h4>
+                <p>웹, 서버, 데이터베이스, 에이전트에 이르는 서비스 전반을 직접 구현하고 배포했습니다. 자연어 interface와 실제 데이터 검색 기능을 연결하며 Full-stack 서비스 구현 경험을 쌓았습니다.</p>
+              </div>
+            </div>
           </article>
-          <article class="project">
-            <div class="project-heading">
-              <h3><a href="https://example.com/?project=ordinary" target="_blank" rel="noopener noreferrer">Ordinary<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
-              <p class="project-period"><time datetime="2026-01">2026.01</time> – <time datetime="2026-02">2026.02</time></p>
+
+          <article class="project" id="commerce-vision" aria-labelledby="commerce-vision-title">
+            <div class="project-meta"><span class="project-type"><span class="project-number">02</span>개인 프로젝트</span><p class="project-period"><time datetime="2026-09">2026.09</time> — <time datetime="2026-10">2026.10</time></p></div>
+            <h3 id="commerce-vision-title">Commerce Vision Search Engine</h3>
+            <p class="project-summary">이미지와 자연어로 원하는 상품을 찾는 Multi-modal 상품 검색 엔진</p>
+            <p class="project-role"><span>담당</span>서비스 설계 · 데이터 수집 · 모델 학습 · 검색 구현</p>
+            <div class="project-links" data-project-links="commerce-vision" role="group" aria-label="Commerce Vision Search Engine 관련 링크">
+              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
+              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
             </div>
-            <p>글을 작성하고 공유하는 개인 블로그</p>
-            <ul class="tags" aria-label="사용 기술"><li>Next.js</li><li>TypeScript</li><li>Markdown</li></ul>
+            <div class="project-stack">
+              <h4>Tech stack</h4>
+              <ul class="tech-tags" aria-label="사용 기술">
+                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
+                <li><img src="assets/tech/vite.svg" width="20" height="20" alt="" loading="lazy" /><span>Vite</span></li>
+                <li><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span></li>
+                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
+                <li><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span></li>
+                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
+              </ul>
+            </div>
+            <div class="project-body">
+              <div class="project-detail">
+                <h4>해결하려는 문제</h4>
+                <p>실제 서비스 중인 애플리케이션의 검색 경험을 분석하고, 이미지나 자연어만으로 원하는 상품을 찾는 서비스를 직접 설계했습니다. 한국의 쇼핑 서비스에서 활용할 수 있는 검색 품질을 목표로 데이터 수집부터 모델 개선까지 구현했습니다.</p>
+              </div>
+              <div class="project-detail">
+                <h4>구현 과정</h4>
+                <ul class="detail-list">
+                  <li><strong>이미지와 텍스트를 연결하는 검색.</strong> OpenAI의 CLIP (Contrastive Language–Image Pre-training) 모델과 Vector Embedding을 활용해 이미지·자연어 기반 상품 검색을 구성했습니다.</li>
+                  <li><strong>도메인에 맞춘 모델 개선.</strong> 사전 학습된 모델만으로 목표한 검색 성능을 얻기 어려워 fine-tuning 과정을 추가했습니다. 쇼핑몰 crawling pipeline을 구축해 학습과 검색에 필요한 데이터셋을 확보했습니다.</li>
+                  <li><strong>반복 가능한 평가 과정.</strong> 평가와 실패 분석 pipeline을 구현해 검색 결과를 점검하고, 모델 성능을 지속적으로 개선할 수 있는 작업 흐름을 마련했습니다.</li>
+                </ul>
+              </div>
+              <div class="project-outcome">
+                <h4>결과와 배운 점</h4>
+                <p>Computer Vision을 실제 검색 서비스에 적용하며 데이터 수집, 모델 fine-tuning, 검색, 평가를 연결했습니다. 모델을 사용하는 데서 나아가 검색 실패를 분석하고 개선하는 과정까지 경험했습니다.</p>
+              </div>
+            </div>
           </article>
-          <article class="project">
-            <div class="project-heading">
-              <h3><a href="https://example.com/?project=form-and-field" target="_blank" rel="noopener noreferrer">Form &amp; Field<svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg><span class="sr-only"> (예시 링크, 새 탭)</span></a></h3>
-              <p class="project-period"><time datetime="2025-10">2025.10</time> – <time datetime="2025-12">2025.12</time></p>
+
+          <article class="project" id="kkotdongnae" aria-labelledby="kkotdongnae-title">
+            <div class="project-meta"><span class="project-type"><span class="project-number">03</span>팀 프로젝트 · 3인</span><p class="project-period"><time datetime="2026-03">2026.03</time> — <time datetime="2026-11">2026.11</time> <span>(예정)</span></p></div>
+            <h3 id="kkotdongnae-title">꽃동네</h3>
+            <p class="project-summary">흩어진 화훼 매장 정보를 연결하고, 에이전트로 탐색을 돕는 플랫폼</p>
+            <p class="project-role"><span>담당</span>팀 리더 · 서비스 기획 · 에이전트 설계 및 구현</p>
+            <div class="project-links" data-project-links="kkotdongnae" role="group" aria-label="꽃동네 관련 링크">
+              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
+              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
             </div>
-            <p>생활용품을 판매하는 온라인 스토어</p>
-            <ul class="tags" aria-label="사용 기술"><li>React</li><li>TypeScript</li><li>Node.js</li></ul>
+            <div class="project-stack">
+              <h4>Tech stack</h4>
+              <ul class="tech-tags" aria-label="사용 기술">
+                <li><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span></li>
+                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
+                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
+                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
+                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
+              </ul>
+            </div>
+            <div class="project-body">
+              <div class="project-detail">
+                <h4>해결하려는 문제</h4>
+                <p>화훼 상품을 구매할 때 매장 정보가 소셜 미디어와 지도 앱 등 여러 채널에 흩어져 있어 탐색 비용이 커지는 문제를 발견했습니다. 매장 정보를 한곳에 연결하고, 에이전트 기반 interface로 탐색 경험을 개선하고자 했습니다.</p>
+              </div>
+              <div class="project-detail">
+                <h4>담당 역할과 구현 과정</h4>
+                <ul class="detail-list">
+                  <li><strong>기획과 팀 리딩.</strong> 3인 팀의 리더로 요구사항과 일정을 관리했습니다. 개발 기준을 공유하고 각자의 작업이 연결되는 부분을 조율하며 서비스 구현을 이끌었습니다.</li>
+                  <li><strong>전국 단위 매장 정보 활용.</strong> 공공데이터포털의 소상공인 데이터셋을 확보하고, 매장의 위치와 상세 정보를 서비스 탐색에 활용했습니다.</li>
+                  <li><strong>에이전트와 backend 연계.</strong> LangChain을 기반으로 Tool Calling과 MCP (Model Context Protocol)를 활용하는 서비스 구조를 설계·구현하고, 에이전트를 backend의 API (Application Programming Interface)와 연결했습니다.</li>
+                </ul>
+              </div>
+              <div class="project-outcome">
+                <h4>경험과 배운 점</h4>
+                <p>에이전트 기능 구현과 팀 운영을 함께 맡으며 기술적인 연결 지점과 협업의 연결 지점을 모두 다뤘습니다. 요구사항을 구체화하고 팀원과 개발 기준을 맞추는 소통·협업 역량을 키웠습니다.</p>
+              </div>
+            </div>
           </article>
         </div>
       </section>
+
+      <section class="resume-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-label"><p class="eyebrow">EXPERIENCE</p><h2 id="experience-title">경험</h2></div>
+        <article class="experience-content">
+          <p class="eyebrow">공동 창업 · 소프트웨어 개발 및 운영</p>
+          <h3>에이전트 기반 이커머스 플랫폼 창업</h3>
+          <p class="entry-period"><time datetime="2026-01">2026.01</time> — <time datetime="2026-09">2026.09</time></p>
+          <p>사용자의 취향을 바탕으로 상품을 탐색하고 추천하는 에이전트가 핵심인 이커머스 플랫폼의 공동 창업자로 참여했습니다.</p>
+          <ul class="detail-list">
+            <li>모바일 앱, 웹, 판매자 센터, 에이전트 서버 등 여러 서비스를 개발하고 실 사용자를 대상으로 배포했습니다.</li>
+            <li>빠르게 변하는 요구사항을 실행 가능한 개발 과제로 구체화하고, 제품 기획부터 개발·운영까지 서비스 전반을 맡았습니다.</li>
+            <li>비즈니스 가치와 가용 리소스를 고려해 우선순위를 결정하며 기술적 판단과 문제 해결 경험을 쌓았습니다.</li>
+          </ul>
+              <ul class="tech-tags" aria-label="사용 기술">
+                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
+                <li><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span></li>
+                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
+                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
+                <li><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span></li>
+                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span></li>
+              </ul>
+        </article>
+      </section>
+
+      <section class="resume-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-label"><p class="eyebrow">TOOLKIT</p><h2 id="skills-title">기술</h2></div>
+        <div>
+          <dl class="skill-list">
+          <div>
+            <dt>Frontend</dt>
+            <dd>
+              <ul class="tech-tags" aria-label="Frontend 기술">
+                <li><img src="assets/tech/html.svg" width="20" height="20" alt="" loading="lazy" /><span>HTML (HyperText Markup Language)</span></li>
+                <li><img src="assets/tech/css.svg" width="20" height="20" alt="" loading="lazy" /><span>CSS (Cascading Style Sheets)</span></li>
+                <li><img src="assets/tech/javascript.svg" width="20" height="20" alt="" loading="lazy" /><span>JavaScript</span></li>
+                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
+                <li><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span></li>
+                <li><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Backend</dt>
+            <dd>
+              <ul class="tech-tags" aria-label="Backend 기술">
+                <li><img src="assets/tech/nodejs.svg" width="20" height="20" alt="" loading="lazy" /><span>Node.js</span></li>
+                <li><img src="assets/tech/express.svg" width="20" height="20" alt="" loading="lazy" /><span>Express</span></li>
+                <li><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span></li>
+                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
+                <li><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Database</dt>
+            <dd>
+              <ul class="tech-tags" aria-label="Database 기술">
+                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
+                <li><img src="assets/tech/mysql.svg" width="20" height="20" alt="" loading="lazy" /><span>MySQL</span></li>
+                <li><img src="assets/tech/firebase.svg" width="20" height="20" alt="" loading="lazy" /><span>Firebase</span></li>
+                <li><img src="assets/tech/mongodb.svg" width="20" height="20" alt="" loading="lazy" /><span>MongoDB</span></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Infrastructure</dt>
+            <dd>
+              <ul class="tech-tags" aria-label="Infrastructure 기술">
+                <li><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span></li>
+                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Agent & Vision</dt>
+            <dd>
+              <ul class="tech-tags" aria-label="Agent & Vision 기술">
+                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
+                <li><img src="assets/tech/langgraph.svg" width="20" height="20" alt="" loading="lazy" /><span>LangGraph</span></li>
+                <li><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span></li>
+                <li><img src="assets/tech/opencv.svg" width="20" height="20" alt="" loading="lazy" /><span>OpenCV (Open Source Computer Vision Library)</span></li>
+              </ul>
+            </dd>
+          </div>
+          </dl>
+          <p class="skill-note">ChatGPT·Cursor를 개발 과정에서 활용하며, Agent Skills, Harness Engineering, MCP (Model Context Protocol)를 학습하고 활용합니다.</p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="education-title">
+        <div class="section-label"><p class="eyebrow">EDUCATION</p><h2 id="education-title">학력</h2></div>
+        <div class="education-content">
+          <h3>홍익대학교 <span class="education-campus">서울캠퍼스</span></h3>
+          <p>정보·컴퓨터공학부 컴퓨터공학 전공</p>
+          <p class="entry-period"><time datetime="2020-03">2020.03</time> — <time datetime="2027-02">2027.02</time> 졸업 예정</p>
+          <p class="coursework">소프트웨어공학, 운영체제, 데이터베이스, 네트워크 등 전공 과목 이수</p>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer container"><span>김건호 · Developer Portfolio</span><a href="mailto:ohnoegg.k@gmail.com">이메일 보내기 <span aria-hidden="true">↗</span></a></footer>
   </body>
 </html>
