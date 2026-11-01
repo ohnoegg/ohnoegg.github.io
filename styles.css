@@ -29,8 +29,7 @@ svg, img { display: block; }
 .skip-link:focus { transform: translateY(0); }
 
 /* 기존의 흰 배경과 푸른 강조색을 유지하며 섹션 탐색을 제공합니다. */
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 28px; border-bottom: 1px solid var(--line); font-size: 13px; }
-.wordmark { color: var(--text); font-weight: 650; }
+.site-header { display: flex; align-items: center; justify-content: flex-end; gap: 20px; padding-block: 28px; border-bottom: 1px solid var(--line); font-size: 13px; }
 .site-header nav { display: flex; gap: 25px; }
 .site-header nav a { color: var(--muted); padding-block: 8px; }
 .site-header nav a:hover { color: var(--accent); }
@@ -49,7 +48,6 @@ h1 { color: var(--accent); font-size: 38px; font-weight: 650; letter-spacing: -1
 h2 { color: var(--accent); font-size: 23px; line-height: 1.5; font-weight: 600; letter-spacing: -.6px; }
 .section-content { font-size: 15px; line-height: 1.95; word-break: keep-all; overflow-wrap: anywhere; }
 .intro-content p + p { margin-top: 14px; }
-.intro-lead { font-size: 20px; font-weight: 600; letter-spacing: -.5px; line-height: 1.6; }
 
 /* 프로젝트: 역할과 링크를 먼저 보여주고 구현 근거를 아래에 정리합니다. */
 .project-list, .resume-section > div, .experience-content { min-width: 0; }
@@ -126,7 +124,6 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
   .profile-details > div { grid-template-columns: 78px minmax(0, 1fr); gap: 8px; }
   .resume-section { grid-template-columns: 1fr; gap: 24px; }
   h2 { font-size: 22px; }
-  .intro-lead { font-size: 18px; }
   .section-content { font-size: 14px; }
   h3 { font-size: 23px; }
   .project-meta { align-items: flex-start; }
