@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" fill="#EDF4FA"/>
+  <circle cx="806" cy="80" r="190" fill="#E0ECF7"/>
+  <circle cx="75" cy="545" r="200" fill="#E3EFF5"/>
+  <g stroke="#D1E0EC" stroke-width="2">
+    <path d="M520 0V540M680 0V540M840 0V540M420 120H960M420 270H960M420 420H960"/>
+    <path d="M435 0 960 525M570 0 960 390"/>
+  </g>
+  <rect x="64" y="70" width="66" height="66" rx="20" fill="#365F8D"/>
+  <path d="M97 86V120M80 103H114" stroke="white" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#365F8D" font-family="sans-serif">
+    <text x="64" y="205" font-size="48" font-weight="700">모두닥터</text>
+    <text x="66" y="245" font-size="19" fill="#61768B">자연어로 찾는 병원 정보</text>
+  </g>
+  <rect x="64" y="306" width="375" height="68" rx="16" fill="white" stroke="#D4E1ED" stroke-width="2"/>
+  <circle cx="97" cy="338" r="10" stroke="#365F8D" stroke-width="3"/>
+  <path d="m105 346 8 8" stroke="#365F8D" stroke-width="3" stroke-linecap="round"/>
+  <text x="132" y="347" fill="#61768B" font-size="18" font-family="sans-serif">내 주변 병원을 찾아보세요</text>
+  <g transform="translate(563 110)">
+    <ellipse cx="117" cy="302" rx="112" ry="19" fill="#CCDEEE"/>
+    <path d="M117 0C51 0 0 50 0 113c0 84 117 178 117 178s117-94 117-178C234 50 183 0 117 0Z" fill="#365F8D"/>
+    <circle cx="117" cy="112" r="71" fill="white"/>
+    <path d="M117 78V146M83 112H151" stroke="#365F8D" stroke-width="19" stroke-linecap="round"/>
+  </g>
+  <circle cx="854" cy="350" r="13" fill="#88ABC9" stroke="white" stroke-width="5"/>
+  <circle cx="495" cy="200" r="11" fill="#88ABC9" stroke="white" stroke-width="5"/>
+  <text x="66" y="470" fill="#6A849C" font-size="13" letter-spacing="3" font-family="sans-serif">HEALTHCARE · NATURAL LANGUAGE SEARCH</text>
+</svg>

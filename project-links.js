@@ -54,7 +54,7 @@ document.querySelectorAll("[data-project-links]").forEach((group) => {
 
     const description = document.createElement("span");
     description.className = "sr-only";
-    const title = group.closest("article").querySelector("h3").textContent;
+    const title = group.closest("article").querySelector("h1, h2, h3").textContent;
     description.textContent = ` (${title}, 새 탭)`;
     link.append(description);
     placeholder.replaceWith(link);

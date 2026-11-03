@@ -63,119 +63,49 @@
       <section class="resume-section" id="projects" aria-labelledby="projects-title">
         <div class="section-label"><h2 id="projects-title">프로젝트</h2></div>
         <div class="project-list">
-          <article class="project" id="modudoctor" aria-labelledby="modudoctor-title">
-            <div class="project-meta"><span class="project-type">개인 프로젝트</span><p class="project-period"><time datetime="2026-09">2026.09</time> — <time datetime="2026-10">2026.10</time></p></div>
-            <h3 id="modudoctor-title">모두닥터</h3>
-            <p class="project-summary">자연어로 조건을 전달하면 필요한 병원 정보를 찾을 수 있는 병원 탐색 서비스</p>
-            <p class="project-role"><span>담당</span>기획 · Full-stack 개발 · 배포</p>
-            <div class="project-links" data-project-links="modudoctor" role="group" aria-label="모두닥터 관련 링크">
-              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
-              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
-            </div>
-            <div class="project-stack">
-              <ul class="tech-tags" aria-label="사용 기술">
-                <li><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span></li>
-                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
-                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
-                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
-                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
-              </ul>
-            </div>
-            <div class="project-body">
-              <div class="project-detail">
-                <h4>해결하려는 문제</h4>
-                <p>병원을 고를 때 위치, 진료과, 운영시간을 여러 곳에서 확인하고 직접 비교해야 하는 불편에 주목했습니다. 사용자가 원하는 조건을 자연어로 전달하면, 그 조건에 맞는 병원 정보를 탐색할 수 있도록 기획했습니다.</p>
+          <article class="project-card" id="modudoctor" aria-labelledby="modudoctor-title">
+            <a class="project-card-link" href="projects/modudoctor/" aria-labelledby="modudoctor-title modudoctor-more">
+              <img class="project-thumbnail" src="assets/projects/modudoctor.svg" width="960" height="540" alt="" loading="lazy" />
+              <div class="project-card-heading">
+                <h3 id="modudoctor-title">모두닥터</h3>
+                <span class="project-card-more" id="modudoctor-more">상세 보기 <span aria-hidden="true">↗</span></span>
               </div>
-              <div class="project-detail">
-                <h4>구현 과정</h4>
-                <ul class="detail-list">
-                  <li><strong>검색에 필요한 데이터 확보.</strong> 공공의료데이터를 활용해 전국 병원 데이터를 확보하고, 병원 정보를 검색하는 backend service와 연결했습니다.</li>
-                  <li><strong>자연어 요청과 검색 기능 연결.</strong> LangChain 기반 에이전트가 사용자 요청의 조건을 해석하고, Tool Calling으로 backend의 API (Application Programming Interface)를 호출하는 흐름을 구성했습니다.</li>
-                  <li><strong>검색 결과를 활용한 응답.</strong> 조회한 병원 정보를 LLM (Large Language Model)의 context로 전달해, 검색 결과를 바탕으로 구조화된 답변을 제공하는 흐름을 설계했습니다.</li>
-                </ul>
-              </div>
-              <div class="project-outcome">
-                <h4>결과와 배운 점</h4>
-                <p>웹, 서버, 데이터베이스, 에이전트에 이르는 서비스 전반을 직접 구현하고 배포했습니다. 자연어 interface와 실제 데이터 검색 기능을 연결하며 Full-stack 서비스 구현 경험을 쌓았습니다.</p>
-              </div>
-            </div>
+            </a>
+            <ul class="tech-tags" aria-label="모두닥터 주요 기술">
+                  <li><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+            </ul>
           </article>
 
-          <article class="project" id="commerce-vision" aria-labelledby="commerce-vision-title">
-            <div class="project-meta"><span class="project-type">개인 프로젝트</span><p class="project-period"><time datetime="2026-09">2026.09</time> — <time datetime="2026-10">2026.10</time></p></div>
-            <h3 id="commerce-vision-title">Commerce Vision Search Engine</h3>
-            <p class="project-summary">이미지와 자연어로 원하는 상품을 찾는 Multi-modal 상품 검색 엔진</p>
-            <p class="project-role"><span>담당</span>서비스 설계 · 데이터 수집 · 모델 학습 · 검색 구현</p>
-            <div class="project-links" data-project-links="commerce-vision" role="group" aria-label="Commerce Vision Search Engine 관련 링크">
-              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
-              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
-            </div>
-            <div class="project-stack">
-              <ul class="tech-tags" aria-label="사용 기술">
-                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
-                <li><img src="assets/tech/vite.svg" width="20" height="20" alt="" loading="lazy" /><span>Vite</span></li>
-                <li><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span></li>
-                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
-                <li><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span></li>
-                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
-              </ul>
-            </div>
-            <div class="project-body">
-              <div class="project-detail">
-                <h4>해결하려는 문제</h4>
-                <p>실제 서비스 중인 애플리케이션의 검색 경험을 분석하고, 이미지나 자연어만으로 원하는 상품을 찾는 서비스를 직접 설계했습니다. 한국의 쇼핑 서비스에서 활용할 수 있는 검색 품질을 목표로 데이터 수집부터 모델 개선까지 구현했습니다.</p>
+          <article class="project-card" id="commerce-vision" aria-labelledby="commerce-vision-title">
+            <a class="project-card-link" href="projects/commerce-vision/" aria-labelledby="commerce-vision-title commerce-vision-more">
+              <img class="project-thumbnail" src="assets/projects/commerce-vision.svg" width="960" height="540" alt="" loading="lazy" />
+              <div class="project-card-heading">
+                <h3 id="commerce-vision-title">Commerce Vision Search Engine</h3>
+                <span class="project-card-more" id="commerce-vision-more">상세 보기 <span aria-hidden="true">↗</span></span>
               </div>
-              <div class="project-detail">
-                <h4>구현 과정</h4>
-                <ul class="detail-list">
-                  <li><strong>이미지와 텍스트를 연결하는 검색.</strong> OpenAI의 CLIP (Contrastive Language–Image Pre-training) 모델과 Vector Embedding을 활용해 이미지·자연어 기반 상품 검색을 구성했습니다.</li>
-                  <li><strong>도메인에 맞춘 모델 개선.</strong> 사전 학습된 모델만으로 목표한 검색 성능을 얻기 어려워 fine-tuning 과정을 추가했습니다. 쇼핑몰 crawling pipeline을 구축해 학습과 검색에 필요한 데이터셋을 확보했습니다.</li>
-                  <li><strong>반복 가능한 평가 과정.</strong> 평가와 실패 분석 pipeline을 구현해 검색 결과를 점검하고, 모델 성능을 지속적으로 개선할 수 있는 작업 흐름을 마련했습니다.</li>
-                </ul>
-              </div>
-              <div class="project-outcome">
-                <h4>결과와 배운 점</h4>
-                <p>Computer Vision을 실제 검색 서비스에 적용하며 데이터 수집, 모델 fine-tuning, 검색, 평가를 연결했습니다. 모델을 사용하는 데서 나아가 검색 실패를 분석하고 개선하는 과정까지 경험했습니다.</p>
-              </div>
-            </div>
+            </a>
+            <ul class="tech-tags" aria-label="Commerce Vision Search Engine 주요 기술">
+                  <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+            </ul>
           </article>
 
-          <article class="project" id="kkotdongnae" aria-labelledby="kkotdongnae-title">
-            <div class="project-meta"><span class="project-type">팀 프로젝트 · 3인</span><p class="project-period"><time datetime="2026-03">2026.03</time> — <time datetime="2026-11">2026.11</time> <span>(예정)</span></p></div>
-            <h3 id="kkotdongnae-title">꽃동네</h3>
-            <p class="project-summary">흩어진 화훼 매장 정보를 연결하고, 에이전트로 탐색을 돕는 플랫폼</p>
-            <p class="project-role"><span>담당</span>팀 리더 · 서비스 기획 · 에이전트 설계 및 구현</p>
-            <div class="project-links" data-project-links="kkotdongnae" role="group" aria-label="꽃동네 관련 링크">
-              <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
-              <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
-            </div>
-            <div class="project-stack">
-              <ul class="tech-tags" aria-label="사용 기술">
-                <li><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span></li>
-                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
-                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
-                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
-                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker Compose</span></li>
-              </ul>
-            </div>
-            <div class="project-body">
-              <div class="project-detail">
-                <h4>해결하려는 문제</h4>
-                <p>화훼 상품을 구매할 때 매장 정보가 소셜 미디어와 지도 앱 등 여러 채널에 흩어져 있어 탐색 비용이 커지는 문제를 발견했습니다. 매장 정보를 한곳에 연결하고, 에이전트 기반 interface로 탐색 경험을 개선하고자 했습니다.</p>
+          <article class="project-card" id="kkotdongnae" aria-labelledby="kkotdongnae-title">
+            <a class="project-card-link" href="projects/kkotdongnae/" aria-labelledby="kkotdongnae-title kkotdongnae-more">
+              <img class="project-thumbnail" src="assets/projects/kkotdongnae.svg" width="960" height="540" alt="" loading="lazy" />
+              <div class="project-card-heading">
+                <h3 id="kkotdongnae-title">꽃동네</h3>
+                <span class="project-card-more" id="kkotdongnae-more">상세 보기 <span aria-hidden="true">↗</span></span>
               </div>
-              <div class="project-detail">
-                <h4>담당 역할과 구현 과정</h4>
-                <ul class="detail-list">
-                  <li><strong>기획과 팀 리딩.</strong> 3인 팀의 리더로 요구사항과 일정을 관리했습니다. 개발 기준을 공유하고 각자의 작업이 연결되는 부분을 조율하며 서비스 구현을 이끌었습니다.</li>
-                  <li><strong>전국 단위 매장 정보 활용.</strong> 공공데이터포털의 소상공인 데이터셋을 확보하고, 매장의 위치와 상세 정보를 서비스 탐색에 활용했습니다.</li>
-                  <li><strong>에이전트와 backend 연계.</strong> LangChain을 기반으로 Tool Calling과 MCP (Model Context Protocol)를 활용하는 서비스 구조를 설계·구현하고, 에이전트를 backend의 API (Application Programming Interface)와 연결했습니다.</li>
-                </ul>
-              </div>
-              <div class="project-outcome">
-                <h4>경험과 배운 점</h4>
-                <p>에이전트 기능 구현과 팀 운영을 함께 맡으며 기술적인 연결 지점과 협업의 연결 지점을 모두 다뤘습니다. 요구사항을 구체화하고 팀원과 개발 기준을 맞추는 소통·협업 역량을 키웠습니다.</p>
-              </div>
-            </div>
+            </a>
+            <ul class="tech-tags" aria-label="꽃동네 주요 기술">
+                  <li><a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                  <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+            </ul>
           </article>
         </div>
       </section>
@@ -193,12 +123,12 @@
             <li>비즈니스 가치와 가용 리소스를 고려해 우선순위를 결정하며 기술적 판단과 문제 해결 경험을 쌓았습니다.</li>
           </ul>
               <ul class="tech-tags" aria-label="사용 기술">
-                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
-                <li><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span></li>
-                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
-                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
-                <li><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span></li>
-                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span></li>
+                <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
         </article>
       </section>
@@ -211,12 +141,12 @@
             <dt>Frontend</dt>
             <dd>
               <ul class="tech-tags" aria-label="Frontend 기술">
-                <li><img src="assets/tech/html.svg" width="20" height="20" alt="" loading="lazy" /><span>HTML (HyperText Markup Language)</span></li>
-                <li><img src="assets/tech/css.svg" width="20" height="20" alt="" loading="lazy" /><span>CSS (Cascading Style Sheets)</span></li>
-                <li><img src="assets/tech/javascript.svg" width="20" height="20" alt="" loading="lazy" /><span>JavaScript</span></li>
-                <li><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span></li>
-                <li><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span></li>
-                <li><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span></li>
+                <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/html.svg" width="20" height="20" alt="" loading="lazy" /><span>HTML (HyperText Markup Language)</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/css.svg" width="20" height="20" alt="" loading="lazy" /><span>CSS (Cascading Style Sheets)</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/javascript.svg" width="20" height="20" alt="" loading="lazy" /><span>JavaScript</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
             </dd>
           </div>
@@ -224,11 +154,11 @@
             <dt>Backend</dt>
             <dd>
               <ul class="tech-tags" aria-label="Backend 기술">
-                <li><img src="assets/tech/nodejs.svg" width="20" height="20" alt="" loading="lazy" /><span>Node.js</span></li>
-                <li><img src="assets/tech/express.svg" width="20" height="20" alt="" loading="lazy" /><span>Express</span></li>
-                <li><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span></li>
-                <li><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span></li>
-                <li><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span></li>
+                <li><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nodejs.svg" width="20" height="20" alt="" loading="lazy" /><span>Node.js</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/express.svg" width="20" height="20" alt="" loading="lazy" /><span>Express</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nestjs.svg" width="20" height="20" alt="" loading="lazy" /><span>NestJS</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
             </dd>
           </div>
@@ -236,10 +166,10 @@
             <dt>Database</dt>
             <dd>
               <ul class="tech-tags" aria-label="Database 기술">
-                <li><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span></li>
-                <li><img src="assets/tech/mysql.svg" width="20" height="20" alt="" loading="lazy" /><span>MySQL</span></li>
-                <li><img src="assets/tech/firebase.svg" width="20" height="20" alt="" loading="lazy" /><span>Firebase</span></li>
-                <li><img src="assets/tech/mongodb.svg" width="20" height="20" alt="" loading="lazy" /><span>MongoDB</span></li>
+                <li><a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/postgresql.svg" width="20" height="20" alt="" loading="lazy" /><span>PostgreSQL</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/mysql.svg" width="20" height="20" alt="" loading="lazy" /><span>MySQL</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/firebase.svg" width="20" height="20" alt="" loading="lazy" /><span>Firebase</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/mongodb.svg" width="20" height="20" alt="" loading="lazy" /><span>MongoDB</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
             </dd>
           </div>
@@ -247,8 +177,8 @@
             <dt>Infrastructure</dt>
             <dd>
               <ul class="tech-tags" aria-label="Infrastructure 기술">
-                <li><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span></li>
-                <li><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span></li>
+                <li><a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/aws.svg" width="20" height="20" alt="" loading="lazy" /><span>AWS (Amazon Web Services)</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/docker.svg" width="20" height="20" alt="" loading="lazy" /><span>Docker</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
             </dd>
           </div>
@@ -256,10 +186,10 @@
             <dt>Agent & Vision</dt>
             <dd>
               <ul class="tech-tags" aria-label="Agent & Vision 기술">
-                <li><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span></li>
-                <li><img src="assets/tech/langgraph.svg" width="20" height="20" alt="" loading="lazy" /><span>LangGraph</span></li>
-                <li><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span></li>
-                <li><img src="assets/tech/opencv.svg" width="20" height="20" alt="" loading="lazy" /><span>OpenCV (Open Source Computer Vision Library)</span></li>
+                <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://www.langchain.com/langgraph" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langgraph.svg" width="20" height="20" alt="" loading="lazy" /><span>LangGraph</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
+                <li><a href="https://opencv.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/opencv.svg" width="20" height="20" alt="" loading="lazy" /><span>OpenCV (Open Source Computer Vision Library)</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
               </ul>
             </dd>
           </div>

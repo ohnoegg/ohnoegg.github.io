@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" fill="#F1EFF9"/>
+  <circle cx="845" cy="75" r="210" fill="#E9E3F5"/>
+  <circle cx="20" cy="520" r="200" fill="#EAE5F4"/>
+  <rect x="64" y="70" width="66" height="66" rx="20" fill="#706293"/>
+  <path d="M80 96V88H89M113 96V88H104M80 110V118H89M113 110V118H104" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="97" cy="103" r="8" stroke="white" stroke-width="3"/>
+  <g fill="#574975" font-family="sans-serif" font-weight="700">
+    <text x="64" y="210" font-size="40">Commerce Vision</text>
+    <text x="64" y="257" font-size="40">Search Engine</text>
+  </g>
+  <text x="66" y="302" fill="#807294" font-size="19" font-family="sans-serif">이미지와 자연어를 잇는 상품 검색</text>
+  <g transform="translate(565 112)">
+    <rect x="0" y="0" width="280" height="266" rx="22" fill="white" stroke="#D8D0E9" stroke-width="2"/>
+    <rect x="18" y="18" width="244" height="196" rx="12" fill="#F1EFF9"/>
+    <path d="m100 59-37 25 24 38 20-12v70h66v-70l20 12 24-38-37-25-20 15h-40l-20-15Z" fill="#9C8AB9"/>
+    <path d="M121 61c0 21 38 21 38 0" stroke="#F1EFF9" stroke-width="5"/>
+    <rect x="22" y="232" width="115" height="9" rx="4.5" fill="#D8D0E9"/>
+    <rect x="174" y="229" width="84" height="18" rx="9" fill="#E6EFE8"/>
+  </g>
+  <path d="M420 355H510V270H545" stroke="#B4A5CD" stroke-width="3" stroke-dasharray="6 8"/>
+  <circle cx="510" cy="355" r="7" fill="#9C8AB9"/>
+  <rect x="64" y="337" width="338" height="58" rx="15" fill="white" stroke="#D8D0E9" stroke-width="2"/>
+  <circle cx="94" cy="365" r="9" stroke="#706293" stroke-width="3"/>
+  <path d="m101 372 7 7" stroke="#706293" stroke-width="3" stroke-linecap="round"/>
+  <text x="124" y="374" fill="#807294" font-size="18" font-family="sans-serif">이런 스타일을 찾고 있어요</text>
+  <text x="66" y="470" fill="#8B7C9E" font-size="13" letter-spacing="3" font-family="sans-serif">COMPUTER VISION · MULTI-MODAL SEARCH</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" fill="#EFF5EF"/>
+  <circle cx="830" cy="90" r="210" fill="#E3EDE2"/>
+  <circle cx="30" cy="550" r="220" fill="#E5EEE2"/>
+  <rect x="64" y="70" width="66" height="66" rx="20" fill="#5D7D64"/>
+  <g fill="#E6ECE0">
+    <ellipse cx="97" cy="95" rx="8" ry="13"/>
+    <ellipse cx="105" cy="103" rx="13" ry="8"/>
+    <ellipse cx="97" cy="111" rx="8" ry="13"/>
+    <ellipse cx="89" cy="103" rx="13" ry="8"/>
+  </g>
+  <circle cx="97" cy="103" r="6" fill="#D4B87B"/>
+  <text x="64" y="205" fill="#46644D" font-size="48" font-family="sans-serif" font-weight="700">꽃동네</text>
+  <text x="66" y="247" fill="#748775" font-size="19" font-family="sans-serif">꽃과 사람, 동네의 매장을 연결하다</text>
+  <rect x="64" y="306" width="350" height="68" rx="16" fill="white" stroke="#CFDECF" stroke-width="2"/>
+  <path d="M97 323c-9 0-16 7-16 15 0 12 16 24 16 24s16-12 16-24c0-8-7-15-16-15Z" stroke="#5D7D64" stroke-width="2.5"/>
+  <circle cx="97" cy="338" r="5" stroke="#5D7D64" stroke-width="2.5"/>
+  <text x="133" y="347" fill="#748775" font-size="18" font-family="sans-serif">우리 동네 화훼 매장 탐색</text>
+  <g transform="translate(565 96)">
+    <ellipse cx="131" cy="317" rx="137" ry="19" fill="#D7E4D6"/>
+    <path d="M130 240V91M130 209 67 163M130 178l60-52" stroke="#63896B" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="91" cy="194" rx="15" ry="38" transform="rotate(-52 91 194)" fill="#83A388"/>
+    <ellipse cx="166" cy="173" rx="15" ry="38" transform="rotate(52 166 173)" fill="#9AB39A"/>
+    <g fill="#DAB3A8">
+      <ellipse cx="130" cy="67" rx="23" ry="39"/>
+      <ellipse cx="156" cy="93" rx="39" ry="23"/>
+      <ellipse cx="130" cy="119" rx="23" ry="39"/>
+      <ellipse cx="104" cy="93" rx="39" ry="23"/>
+    </g>
+    <circle cx="130" cy="93" r="19" fill="#EAD5A0"/>
+    <path d="m61 233 17 76h106l17-76H61Z" fill="#B0BFA4"/>
+    <rect x="52" y="221" width="158" height="23" rx="7" fill="#8FA488"/>
+  </g>
+  <text x="66" y="470" fill="#7C907B" font-size="13" letter-spacing="3" font-family="sans-serif">LOCAL FLOWER SHOPS · AGENT-ASSISTED DISCOVERY</text>
+</svg>

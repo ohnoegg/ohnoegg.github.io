@@ -49,9 +49,36 @@ h2 { color: var(--accent); font-size: 23px; line-height: 1.5; font-weight: 600; 
 .section-content { font-size: 15px; line-height: 1.95; word-break: keep-all; overflow-wrap: anywhere; }
 .intro-content p + p { margin-top: 14px; }
 
-/* 프로젝트: 역할과 링크를 먼저 보여주고 구현 근거를 아래에 정리합니다. */
+/* 목록은 대표 이미지와 주요 기술만 보여주며, 구현 근거는 상세 페이지에 정리합니다. */
 .project-list, .resume-section > div, .experience-content { min-width: 0; }
-.project + .project { margin-top: 46px; padding-top: 38px; border-top: 1px solid var(--line); }
+.project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
+.project-card { position: relative; min-width: 0; padding: 14px; border: 1px solid var(--line); border-radius: 10px; transition: border-color .18s, box-shadow .18s; }
+.project-card:hover, .project-card:focus-within { border-color: #9db3cd; box-shadow: 0 6px 18px #28344209; }
+.project-card-link { color: var(--text); }
+.project-card-link:hover { text-decoration: none; }
+.project-card-link::after { position: absolute; inset: 0; content: ""; border-radius: 10px; }
+.project-card-link:focus-visible { outline: none; }
+.project-card-link:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-thumbnail { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; background: var(--soft); }
+.project-card-heading { margin-top: 15px; }
+.project-card h3 { font-size: 19px; letter-spacing: -.4px; }
+.project-card-more { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; }
+.project-card .tech-tags { margin-top: 14px; }
+.project-card .tech-tags a { position: relative; z-index: 1; }
+.site-home { margin-right: auto; color: var(--text); font-weight: 600; }
+.project-container { max-width: 848px; }
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.project-page { margin-top: 36px; }
+.project-page h1 { font-size: 36px; overflow-wrap: anywhere; }
+.project-page .project-meta { margin-bottom: 16px; }
+.project-cover { width: 100%; height: auto; margin-top: 30px; border: 1px solid var(--line); border-radius: 10px; }
+.project-page .project-body { gap: 30px; margin-top: 36px; font-size: 15px; }
+.project-pagination { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px 24px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.8; }
+.data-source { padding: 20px; border: 1px solid var(--line); border-radius: 6px; }
+.data-source a { text-decoration: underline; text-underline-offset: 4px; }
+.data-source-details { display: grid; gap: 5px; margin-top: 14px; font-size: 12px; }
+.data-source-details > div { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; }
+.data-source-details dt { color: var(--muted); }
 .project-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; margin-bottom: 13px; }
 .project-type { color: var(--accent); font-size: 11px; font-weight: 550; }
 .project-period, .entry-period { color: var(--muted); font-size: 12px; line-height: 1.8; }
@@ -69,11 +96,13 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
 .project-stack { margin-top: 22px; }
 .project-stack .tech-tags { margin-top: 0; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 10px 0 0; list-style: none; }
-.tech-tags li { display: inline-flex; align-items: center; gap: 7px; min-width: 0; max-width: 100%; padding: 6px 9px; border: 1px solid var(--line); border-radius: 5px; background: #fff; color: #4b5868; font-size: 11px; line-height: 1.6; }
+.tech-tags li { display: inline-flex; min-width: 0; max-width: 100%; border: 1px solid var(--line); border-radius: 5px; background: #fff; color: #4b5868; font-size: 11px; line-height: 1.6; }
+.tech-tags a { display: inline-flex; align-items: center; gap: 7px; min-width: 0; max-width: 100%; padding: 6px 9px; border-radius: 4px; color: inherit; }
+.tech-tags a:hover { color: var(--accent); background: var(--soft); text-decoration: none; }
 .tech-tags img { width: 19px; height: 19px; object-fit: contain; flex: 0 0 auto; }
 .tech-tags span { overflow-wrap: anywhere; }
 .project-body { display: grid; gap: 24px; margin-top: 28px; font-size: 14px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
-.project-body h4 { margin-bottom: 7px; color: var(--text); font-size: 13px; font-weight: 650; }
+.project-body h2 { margin-bottom: 7px; color: var(--text); font-size: 17px; font-weight: 650; letter-spacing: -.3px; }
 .project-detail p, .detail-list { color: #536171; }
 .detail-list { padding-left: 18px; margin: 0; }
 .detail-list li + li { margin-top: 8px; }
@@ -109,6 +138,7 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
   .profile-tagline { font-size: 17px; }
   .resume-section { margin-top: 38px; padding-top: 30px; }
   .skill-list > div { grid-template-columns: 1fr; gap: 8px; }
+  .project-list { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
@@ -129,6 +159,9 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
   .project-meta { align-items: flex-start; }
   .project-period { font-size: 11px; }
   .project-role { font-size: 11px; }
+  .project-page h1 { font-size: 29px; }
+  .project-page .project-body { font-size: 14px; }
+  .project-pagination { flex-direction: column; }
   .project-links { gap: 7px; }
   .project-link, .link-unavailable { padding: 9px 10px; font-size: 11px; }
   .project-body { font-size: 13px; line-height: 1.95; }
@@ -141,6 +174,7 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .project-card { transition: none; }
 }
 
 @media print {
