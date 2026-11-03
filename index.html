@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#ffffff" />
     <title>김건호 | 포트폴리오</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="project-links.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -26,10 +25,10 @@
 
 
     <header class="site-header container">
-      <nav aria-label="주요 섹션">
-        <a href="#projects">프로젝트</a>
-        <a href="#experience">경험</a>
-        <a href="#skills">기술</a>
+      <a class="site-home" href="./">김건호</a>
+      <nav aria-label="주요 페이지">
+        <a href="./" aria-current="page">소개</a>
+        <a href="projects/">프로젝트</a>
       </nav>
     </header>
     <main class="container" id="main">
@@ -57,56 +56,6 @@
           <p>‘IT로 현실의 문제를 해결하는 사람’으로 스스로의 업(業)을 정의합니다. 문제의 본질을 파악하고, 실행 가능한 작은 단위로 나눈 뒤, 필요한 지식과 기술을 익혀 하나씩 해결해 나갑니다.</p>
           <p>4학년 학기 중 창업한 스타트업에서 빠르게 바뀌는 요구 사항과 낯선 기술적 문제를 겪어왔고, 불명확한 문제를 실행 가능한 과제로 구체화하는 역량을 향상시킬 수 있었습니다. 조직의 비즈니스 가치를 최우선 순위로 두고, 리소스 투입을 효율적으로 조절하는 태도를 배울 수 있었습니다.</p>
           <p>새로운 문제를 마주할 때마다 배우고, 직접 부딪히고, 끝내 해결하는 과정을 반복하며 문제 해결력의 깊이를 더해왔습니다. 과거보다 더 복잡한 문제를 더 빠르고, 정확하게 해결할 수 있는 사람이 되는 것, 저의 지향점이자 제가 성장하는 방식입니다.</p>
-        </div>
-      </section>
-
-      <section class="resume-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-label"><h2 id="projects-title">Projects</h2></div>
-        <div class="project-list">
-          <article class="project-card" id="modudoctor" aria-labelledby="modudoctor-title">
-            <a class="project-card-link" href="projects/modudoctor/" aria-labelledby="modudoctor-title modudoctor-more">
-              <img class="project-thumbnail" src="assets/projects/modudoctor.svg" width="960" height="540" alt="" loading="lazy" />
-              <div class="project-card-heading">
-                <h3 id="modudoctor-title">모두닥터</h3>
-                <span class="project-card-more" id="modudoctor-more">상세 보기 <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-            <ul class="tech-tags" aria-label="모두닥터 주요 기술">
-                  <li><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/nextjs.svg" width="20" height="20" alt="" loading="lazy" /><span>Next.js</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-            </ul>
-          </article>
-
-          <article class="project-card" id="commerce-vision" aria-labelledby="commerce-vision-title">
-            <a class="project-card-link" href="projects/commerce-vision/" aria-labelledby="commerce-vision-title commerce-vision-more">
-              <img class="project-thumbnail" src="assets/projects/commerce-vision.svg" width="960" height="540" alt="" loading="lazy" />
-              <div class="project-card-heading">
-                <h3 id="commerce-vision-title">Commerce Vision Search Engine</h3>
-                <span class="project-card-more" id="commerce-vision-more">상세 보기 <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-            <ul class="tech-tags" aria-label="Commerce Vision Search Engine 주요 기술">
-                  <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/react.svg" width="20" height="20" alt="" loading="lazy" /><span>React</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/fastapi.svg" width="20" height="20" alt="" loading="lazy" /><span>FastAPI</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/pytorch.svg" width="20" height="20" alt="" loading="lazy" /><span>PyTorch</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-            </ul>
-          </article>
-
-          <article class="project-card" id="kkotdongnae" aria-labelledby="kkotdongnae-title">
-            <a class="project-card-link" href="projects/kkotdongnae/" aria-labelledby="kkotdongnae-title kkotdongnae-more">
-              <img class="project-thumbnail" src="assets/projects/kkotdongnae.svg" width="960" height="540" alt="" loading="lazy" />
-              <div class="project-card-heading">
-                <h3 id="kkotdongnae-title">꽃동네</h3>
-                <span class="project-card-more" id="kkotdongnae-more">상세 보기 <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-            <ul class="tech-tags" aria-label="꽃동네 주요 기술">
-                  <li><a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/flutter.svg" width="20" height="20" alt="" loading="lazy" /><span>Flutter</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/django.svg" width="20" height="20" alt="" loading="lazy" /><span>Django</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-                  <li><a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer"><img src="assets/tech/langchain.svg" width="20" height="20" alt="" loading="lazy" /><span>LangChain</span><span class="sr-only"> 공식 홈페이지 (새 탭)</span></a></li>
-            </ul>
-          </article>
         </div>
       </section>
 
