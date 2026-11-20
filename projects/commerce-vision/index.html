@@ -51,24 +51,10 @@
             </div>
             <img class="project-cover" src="../../assets/projects/commerce-vision.svg" width="960" height="540" alt="" />
             <div class="project-body">
-              <div class="project-detail">
-                <h2>상황</h2>
-                <p>쇼핑 앱에서 상품명을 모르면 사진을 갖고 있어도 색상이나 형태를 검색어로 옮기기 어렵습니다. 사진과 텍스트로 표현한 특징을 함께 비교할 수 있는 검색 방식이 필요했습니다.</p>
-              </div>
-              <div class="project-detail">
-                <h2>과제</h2>
-                <p>개인 프로젝트로 상품 사진과 자연어 설명을 비교할 수 있는 기준 모델을 연결하고, 상품 검색 결과와 모델별 차이를 살펴볼 수 있는 화면을 구현하기로 했습니다.</p>
-              </div>
-              <div class="project-detail">
-                <h2>실행</h2>
-                <ul class="detail-list">
-                  <li><strong>이미지와 텍스트 임베딩.</strong> 사전 학습된 CLIP (Contrastive Language–Image Pre-training) 모델을 PyTorch로 불러와 사진과 설명을 같은 벡터 공간에 매핑했습니다. 변환한 벡터는 정규화해 코사인 유사도로 비교했습니다.</li>
-                  <li><strong>검색과 평가 화면.</strong> React로 이미지 업로드와 유사 상품 목록을 만들었습니다. 모델 평가 화면은 예시 데이터로 정확도, 응답 시간, 성공·실패 사례를 비교할 수 있게 구성했습니다.</li>
-                </ul>
-              </div>
-              <div class="project-outcome">
-                <h2>결과</h2>
-                <p>예제 사진 1장과 영문 설명 3개에서 각각 <strong>512차원 임베딩</strong>을 생성했습니다. 빨간 스니커즈 사진과의 코사인 유사도는 ‘빨간 스니커즈’ <strong>0.270</strong>, ‘파란 스니커즈’ 0.211, ‘검은 우산’ 0.081 순이었습니다. 국내 쇼핑몰 데이터 연동과 검색 정확도 평가는 후속 단계입니다.</p>
+              <div class="project-detail case-narrative">
+                <p>사진이 있어도 상품명을 모르면 쇼핑 앱에서 검색어를 고르기 어렵습니다. 사진과 자연어 설명을 같은 기준으로 비교하는 모델을 연결하고, 사진을 올려 유사 상품을 찾는 사용 흐름을 프로토타입으로 만들었습니다.</p>
+                <p>PyTorch에서 사전 학습된 CLIP (Contrastive Language–Image Pre-training) 모델을 불러와 사진과 설명을 같은 벡터 공간의 <strong>512차원 임베딩</strong>으로 변환했습니다. React로 만든 검색·평가 화면에는 예시 데이터를 넣어 유사 상품 목록과 모델별 정확도·응답 시간을 비교할 수 있도록 구성했습니다.</p>
+                <p>모델을 직접 실행해 빨간 스니커즈 예제 사진 1장과 영문 설명 3개의 코사인 유사도를 비교했습니다. 사진과 일치하는 ‘빨간 스니커즈’가 <strong>0.270</strong>으로 가장 높았고, ‘파란 스니커즈’는 0.211, ‘검은 우산’은 0.081이었습니다.</p>
               </div>
             </div>
           </article>
