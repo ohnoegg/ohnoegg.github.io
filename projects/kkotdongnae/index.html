@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="흩어진 화훼 매장 정보를 연결하고, 에이전트로 탐색을 돕는 플랫폼. 김건호의 꽃동네 프로젝트 구현 과정과 기술 스택을 소개합니다." />
+    <meta name="description" content="흩어진 꽃집 정보를 한곳에 모아 지역이나 매장명으로 찾을 수 있게 만든 모바일 탐색 프로토타입입니다." />
     <meta name="theme-color" content="#ffffff" />
     <title>꽃동네 | 김건호 포트폴리오</title>
     <link rel="stylesheet" href="../../styles.css" />
@@ -33,8 +33,8 @@
       <article class="project project-page" id="kkotdongnae" aria-labelledby="kkotdongnae-title">
             <div class="project-meta"><span class="project-type">팀 프로젝트 · 3인</span><p class="project-period"><time datetime="2026-03">2026.03</time> — <time datetime="2026-11">2026.11</time> <span>(예정)</span></p></div>
             <h1 id="kkotdongnae-title">꽃동네</h1>
-            <p class="project-summary">흩어진 화훼 매장 정보를 연결하고, 에이전트로 탐색을 돕는 플랫폼</p>
-            <p class="project-role"><span>담당</span>팀 리더 · 서비스 기획 · 에이전트 설계 및 구현</p>
+            <p class="project-summary">흩어진 꽃집 정보를 한곳에 모아 지역이나 매장명으로 찾는 모바일 탐색 프로토타입</p>
+            <p class="project-role"><span>담당</span>팀 리딩 · 서비스 기획 · 에이전트 연동 설계</p>
             <div class="project-links" data-project-links="kkotdongnae" role="group" aria-label="꽃동네 관련 링크">
               <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
               <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
@@ -51,20 +51,20 @@
             <img class="project-cover" src="../../assets/projects/kkotdongnae.svg" width="960" height="540" alt="" />
             <div class="project-body">
               <div class="project-detail">
-                <h2>해결하려는 문제</h2>
-                <p>화훼 상품을 구매할 때 매장 정보가 소셜 미디어와 지도 앱 등 여러 채널에 흩어져 있어 탐색 비용이 커지는 문제를 발견했습니다. 매장 정보를 한곳에 연결하고, 에이전트 기반 interface로 탐색 경험을 개선하고자 했습니다.</p>
+                <h2>흩어진 꽃집 정보</h2>
+                <p>꽃을 사려는 사람이 후보 매장을 찾으려면 소셜 미디어와 지도 앱을 오가야 했습니다. 3인 팀의 리더로서 매장 정보를 한곳에서 찾을 수 있도록 검색 범위를 정하고, 대화에서도 같은 정보를 조회할 수 있는 구조를 설계했습니다.</p>
               </div>
               <div class="project-detail">
                 <h2>담당 역할과 구현 과정</h2>
                 <ul class="detail-list">
-                  <li><strong>기획과 팀 리딩.</strong> 3인 팀의 리더로 요구사항과 일정을 관리했습니다. 개발 기준을 공유하고 각자의 작업이 연결되는 부분을 조율하며 서비스 구현을 이끌었습니다.</li>
-                  <li><strong>전국 단위 매장 정보 활용.</strong> 공공데이터포털의 소상공인 데이터셋을 확보하고, 매장의 위치와 상세 정보를 서비스 탐색에 활용했습니다.</li>
-                  <li><strong>에이전트와 backend 연계.</strong> LangChain을 기반으로 Tool Calling과 MCP (Model Context Protocol)를 활용하는 서비스 구조를 설계·구현하고, 에이전트를 backend의 API (Application Programming Interface)와 연결했습니다.</li>
+                  <li><strong>팀 작업 조율.</strong> 요구사항과 일정을 관리하고, 앱·backend·에이전트가 맞물리는 부분의 개발 기준을 팀원과 공유했습니다.</li>
+                  <li><strong>매장 검색에 공공데이터 활용.</strong> 팀은 소상공인시장진흥공단의 상가 정보에서 꽃집 데이터셋을 확보하고, 매장명과 주소, 위치를 모바일 검색에 활용했습니다.</li>
+                  <li><strong>대화형 탐색 설계.</strong> LangChain 에이전트가 매장 조회를 요청할 수 있도록 Tool Calling과 MCP (Model Context Protocol)를 활용해 backend 검색 기능과 연결하는 구조를 설계했습니다.</li>
                 </ul>
               </div>
               <div class="project-outcome">
-                <h2>경험과 배운 점</h2>
-                <p>에이전트 기능 구현과 팀 운영을 함께 맡으며 기술적인 연결 지점과 협업의 연결 지점을 모두 다뤘습니다. 요구사항을 구체화하고 팀원과 개발 기준을 맞추는 소통·협업 역량을 키웠습니다.</p>
+                <h2>꽃집 검색 프로토타입</h2>
+                <p>팀은 전국 꽃집 데이터 9,901건을 담은 모바일 프로토타입을 만들었습니다. 사용자는 지역이나 매장명으로 꽃집을 찾고, 검색 결과에서 매장 주소와 위치를 확인할 수 있습니다.</p>
               </div>
             </div>
           </article>

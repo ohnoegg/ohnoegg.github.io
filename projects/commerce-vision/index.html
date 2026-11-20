@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="이미지와 자연어로 원하는 상품을 찾는 Multi-modal 상품 검색 엔진. 김건호의 Commerce Vision Search Engine 프로젝트 구현 과정과 기술 스택을 소개합니다." />
+    <meta name="description" content="상품명으로 설명하기 어려운 상품을 이미지와 자연어로 찾기 위해 만든 검색 프로토타입입니다." />
     <meta name="theme-color" content="#ffffff" />
     <title>Commerce Vision Search Engine | 김건호 포트폴리오</title>
     <link rel="stylesheet" href="../../styles.css" />
@@ -33,8 +33,8 @@
       <article class="project project-page" id="commerce-vision" aria-labelledby="commerce-vision-title">
             <div class="project-meta"><span class="project-type">개인 프로젝트</span><p class="project-period"><time datetime="2026-09">2026.09</time> — <time datetime="2026-10">2026.10</time></p></div>
             <h1 id="commerce-vision-title">Commerce Vision Search Engine</h1>
-            <p class="project-summary">이미지와 자연어로 원하는 상품을 찾는 Multi-modal 상품 검색 엔진</p>
-            <p class="project-role"><span>담당</span>서비스 설계 · 데이터 수집 · 모델 학습 · 검색 구현</p>
+            <p class="project-summary">이미지와 자연어로 상품을 찾기 위한 검색 프로토타입</p>
+            <p class="project-role"><span>담당</span>검색 흐름 설계 · 임베딩 구현 · 검색 및 모델 평가 화면 개발</p>
             <div class="project-links" data-project-links="commerce-vision" role="group" aria-label="Commerce Vision Search Engine 관련 링크">
               <span class="link-unavailable" data-link="demo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg>서비스 · 링크 미등록</span>
               <span class="link-unavailable" data-link="repository"><svg class="icon icon-github" aria-hidden="true"><use href="#icon-github" /></svg>GitHub · 링크 미등록</span>
@@ -52,20 +52,20 @@
             <img class="project-cover" src="../../assets/projects/commerce-vision.svg" width="960" height="540" alt="" />
             <div class="project-body">
               <div class="project-detail">
-                <h2>해결하려는 문제</h2>
-                <p>실제 서비스 중인 애플리케이션의 검색 경험을 분석하고, 이미지나 자연어만으로 원하는 상품을 찾는 서비스를 직접 설계했습니다. 한국의 쇼핑 서비스에서 활용할 수 있는 검색 품질을 목표로 데이터 수집부터 모델 개선까지 구현했습니다.</p>
+                <h2>상품명을 모를 때의 검색</h2>
+                <p>쇼핑 앱의 검색 경험을 살펴보며, 이름을 모르는 상품은 사진이 있어도 특징을 검색어로 옮기기 어렵다는 문제에 주목했습니다. 사진이나 자연어 설명을 검색 입력으로 쓸 수 있도록, 두 입력을 같은 방식으로 비교할 기준 모델과 평가 흐름을 설계했습니다.</p>
               </div>
               <div class="project-detail">
                 <h2>구현 과정</h2>
                 <ul class="detail-list">
-                  <li><strong>이미지와 텍스트를 연결하는 검색.</strong> OpenAI의 CLIP (Contrastive Language–Image Pre-training) 모델과 Vector Embedding을 활용해 이미지·자연어 기반 상품 검색을 구성했습니다.</li>
-                  <li><strong>도메인에 맞춘 모델 개선.</strong> 사전 학습된 모델만으로 목표한 검색 성능을 얻기 어려워 fine-tuning 과정을 추가했습니다. 쇼핑몰 crawling pipeline을 구축해 학습과 검색에 필요한 데이터셋을 확보했습니다.</li>
-                  <li><strong>반복 가능한 평가 과정.</strong> 평가와 실패 분석 pipeline을 구현해 검색 결과를 점검하고, 모델 성능을 지속적으로 개선할 수 있는 작업 흐름을 마련했습니다.</li>
+                  <li><strong>이미지와 텍스트의 공통 표현.</strong> 사전 학습된 CLIP (Contrastive Language–Image Pre-training) 모델을 PyTorch에서 불러와 이미지와 텍스트를 같은 벡터 공간의 정규화된 임베딩으로 변환하도록 구현했습니다.</li>
+                  <li><strong>상품 검색 화면.</strong> React로 이미지 업로드와 유사 상품 목록 화면을 만들고, 예시 데이터로 검색 결과를 보여주는 방식을 구체화했습니다.</li>
+                  <li><strong>모델 평가 화면.</strong> 기준 모델과 개선 후보의 검색 정확도와 응답 시간을 나란히 보고, 성공·실패 사례를 검토할 수 있도록 화면을 설계했습니다.</li>
                 </ul>
               </div>
               <div class="project-outcome">
-                <h2>결과와 배운 점</h2>
-                <p>Computer Vision을 실제 검색 서비스에 적용하며 데이터 수집, 모델 fine-tuning, 검색, 평가를 연결했습니다. 모델을 사용하는 데서 나아가 검색 실패를 분석하고 개선하는 과정까지 경험했습니다.</p>
+                <h2>프로토타입에서 구현한 범위</h2>
+                <p>이미지와 텍스트의 임베딩을 생성하는 기준 모델을 구현하고, 예시 데이터로 상품 검색 결과와 모델 평가 화면을 구성했습니다. 국내 쇼핑몰 데이터 연동, fine-tuning, 실제 검색 품질 측정은 후속 단계입니다.</p>
               </div>
             </div>
           </article>
