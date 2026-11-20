@@ -121,8 +121,8 @@ h3 { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.6px;
 .experience-role { margin-bottom: 8px; color: var(--muted); font-size: 12px; font-weight: 550; }
 .experience-content h3 { font-size: 20px; }
 .experience-content .entry-period { margin-top: 8px; }
-.experience-content > p:not(.experience-role, .entry-period) { margin-top: 18px; }
-.experience-content .detail-list { margin-top: 15px; }
+.experience-stages { display: grid; gap: 16px; margin-top: 18px; }
+.experience-stages h4 { margin-bottom: 4px; font-size: 14px; font-weight: 650; }
 .experience-content .tech-tags { margin-top: 20px; }
 .skill-list { display: grid; gap: 24px; }
 .skill-list > div { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 16px; align-items: start; }

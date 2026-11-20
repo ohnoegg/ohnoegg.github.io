@@ -51,20 +51,23 @@
             <img class="project-cover" src="../../assets/projects/kkotdongnae.svg" width="960" height="540" alt="" />
             <div class="project-body">
               <div class="project-detail">
-                <h2>흩어진 꽃집 정보</h2>
-                <p>꽃을 사려는 사람이 후보 매장을 찾으려면 소셜 미디어와 지도 앱을 오가야 했습니다. 3인 팀의 리더로서 매장 정보를 한곳에서 찾을 수 있도록 검색 범위를 정하고, 대화에서도 같은 정보를 조회할 수 있는 구조를 설계했습니다.</p>
+                <h2>상황</h2>
+                <p>꽃집 정보가 소셜 미디어와 지도 앱에 흩어져 있었습니다. 지역명으로 검색할 때는 같은 단어가 상호에 들어간 다른 지역 매장도 결과에 섞였습니다.</p>
               </div>
               <div class="project-detail">
-                <h2>담당 역할과 구현 과정</h2>
+                <h2>과제</h2>
+                <p>3인 팀의 리더로서 매장 정보를 한곳에 모아 지역이나 상호로 검색하는 모바일 프로토타입의 범위를 정하고, 대화형 탐색의 연동 구조를 설계했습니다.</p>
+              </div>
+              <div class="project-detail">
+                <h2>실행</h2>
                 <ul class="detail-list">
-                  <li><strong>팀 작업 조율.</strong> 요구사항과 일정을 관리하고, 앱·backend·에이전트가 맞물리는 부분의 개발 기준을 팀원과 공유했습니다.</li>
-                  <li><strong>매장 검색에 공공데이터 활용.</strong> 팀은 소상공인시장진흥공단의 상가 정보에서 꽃집 데이터셋을 확보하고, 매장명과 주소, 위치를 모바일 검색에 활용했습니다.</li>
-                  <li><strong>대화형 탐색 설계.</strong> LangChain 에이전트가 매장 조회를 요청할 수 있도록 Tool Calling과 MCP (Model Context Protocol)를 활용해 backend 검색 기능과 연결하는 구조를 설계했습니다.</li>
+                  <li><strong>팀 조율과 에이전트 설계.</strong> 요구사항과 일정을 관리하고, LangChain 에이전트가 Tool Calling과 MCP (Model Context Protocol)로 backend의 매장 조회 기능을 호출하는 구조를 설계했습니다.</li>
+                  <li><strong>매장 데이터와 검색 기준.</strong> 팀은 소상공인시장진흥공단의 상가 정보에서 꽃집의 상호·주소·좌표를 추렸습니다. 검색어와 일치하는 행정구역이 있으면 해당 지역의 매장을 반환하도록 검색 기준을 바꿨습니다.</li>
                 </ul>
               </div>
               <div class="project-outcome">
-                <h2>꽃집 검색 프로토타입</h2>
-                <p>팀은 전국 꽃집 데이터 9,901건을 담은 모바일 프로토타입을 만들었습니다. 사용자는 지역이나 매장명으로 꽃집을 찾고, 검색 결과에서 매장 주소와 위치를 확인할 수 있습니다.</p>
+                <h2>결과</h2>
+                <p>팀은 <strong>서울·경기·인천 83개 시·군·구의 꽃집 9,901곳</strong>을 검색할 수 있는 모바일 프로토타입을 만들었습니다. 같은 데이터로 변경 전후의 ‘수원’ 검색을 비교했을 때, 처음 50개 결과 중 수원에 위치한 매장이 <strong>48곳에서 50곳</strong>으로 늘었습니다.</p>
               </div>
             </div>
           </article>
